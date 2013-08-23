@@ -1,0 +1,1445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">active questions tagged javascript - Stack Overflow</title>
+    <link rel="self" href="http://stackoverflow.com/feeds/tag/javascript" type="application/atom+xml" />
+    <link rel="alternate" href="http://stackoverflow.com/questions/tagged/?tagnames=javascript&amp;amp;sort=active" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2013-08-23T14:03:48Z</updated>
+    <id>http://stackoverflow.com/feeds/tag/javascript</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-sa/3.0/rdf</creativeCommons:license> 
+    <entry>
+        <id>http://stackoverflow.com/q/18404667</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Trouble making searchfield on click show button and hide when it closes</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="wordpress"/>
+        <author>
+            <name>user2709607</name>
+            <uri>http://stackoverflow.com/users/2709607</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404667/trouble-making-searchfield-on-click-show-button-and-hide-when-it-closes" />
+        <published>2013-08-23T13:56:13Z</published>
+        <updated>2013-08-23T14:03:42Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I try to show the submit button when I click on the search field...also hide it back when the field close (the is form located in the main navigation bar)...&lt;/p&gt;
+
+&lt;p&gt;This is my code :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document).ready(function(){
+  $(&quot;#search-click&quot;).click(function(){
+    $(&quot;.search-form .search-submit&quot;).css(&quot;display&quot; , &quot;block&quot;);
+  });
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&#39;s not working at all...this is my link : &lt;a href=&quot;http://dev.pixstreammedia.com.s150147.gridserver.com/system/&quot; rel=&quot;nofollow&quot;&gt;http://dev.pixstreammedia.com.s150147.gridserver.com/system/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Can someone help me with that ?&lt;/p&gt;
+
+&lt;p&gt;Thanks !&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404714</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Getting [object] when passing parameter to javascript function</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/>
+        <author>
+            <name>PaRsH</name>
+            <uri>http://stackoverflow.com/users/1586764</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404714/getting-object-when-passing-parameter-to-javascript-function" />
+        <published>2013-08-23T13:58:42Z</published>
+        <updated>2013-08-23T14:03:37Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have the following function that takes three arguments.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;initializeDateDropdown(&quot;year&quot;, &quot;month&quot;, &quot;day&quot;);
+
+    function initializeDateDropdown(year1,month1,day1) {
+        var currentYear = new Date().getFullYear();
+        $(&quot;#&quot;+year1).append(function () {
+            var yearList = &#39;&#39;;
+            for (var i = 1951; i &amp;lt;= currentYear; i++) {
+                yearList += &#39;&amp;lt;option value=&quot;&#39; + i + &#39;&quot;&amp;gt;&#39; + i + &#39;&amp;lt;/option&amp;gt;&#39;;
+            }
+            return yearList;
+        }).val(currentYear)
+      .add($(&#39;#&#39;+month1).val(new Date().getMonth()))
+      .bind(&#39;change&#39;, showDays);
+
+        showDays(year1, month1, day1);
+
+        $(&#39;#&#39;+day1).val(new Date().getDate());
+
+
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the definition of the &lt;code&gt;showDays()&lt;/code&gt; method, when I try to display the year1, I keep getting &lt;code&gt;[object] [object]&lt;/code&gt; and month1 and day1 as &lt;code&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Can anybody tell me what is wrong with this code? &lt;/p&gt;
+
+&lt;p&gt;Below is the showDays method defination.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function showDays(year, month, day) {
+        alert(year);
+        var days = new Date($(&quot;#&quot; + year).val(), parseInt($(&#39;#&#39; + month).val(), 10) + 1, 0).getDate();
+
+        var prevSelectedDate = $(&#39;#&#39; + day).val();
+        $(&#39;#&#39; + day).empty();
+        for (var i = 1; i &amp;lt;= parseInt(days, 10) ; i++) {
+            $(&#39;#&#39; + day).append($(&#39;&amp;lt;option /&amp;gt;&#39;, { text: i, value: i }));
+        }
+
+        $(&#39;#&#39; + day).val(prevSelectedDate);
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Please help me with this.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404362</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">querySelectorAll alternative for IE</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="internet-explorer-9"/>
+        <author>
+            <name>Joao Victor</name>
+            <uri>http://stackoverflow.com/users/1588919</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404362/queryselectorall-alternative-for-ie" />
+        <published>2013-08-23T13:40:45Z</published>
+        <updated>2013-08-23T14:02:47Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m running some javascript which uses this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;controls = document.querySelectorAll(&quot;input,textarea,button&quot;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It should work on IE 9 (which is the version that the developers and the client use). But in our project we use some really old web components that only work properly on compatibility mode. And querySelectorAll only works on standards mode from what i found after some research.&lt;/p&gt;
+
+&lt;p&gt;Is there any alternative?&lt;/p&gt;
+
+&lt;p&gt;EDIT: it works fine on Chrome and FF&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18251554</id>
+        <re:rank scheme="http://stackoverflow.com">7</re:rank>
+        <title type="text">Mouse controlled first person movement JS</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="css3"/>
+        <author>
+            <name>Shahar Galukman</name>
+            <uri>http://stackoverflow.com/users/1523400</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18251554/mouse-controlled-first-person-movement-js" />
+        <published>2013-08-15T11:14:06Z</published>
+        <updated>2013-08-23T14:02:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to implement a first person movement using the mouse.
+I do have it working with keyboard yet I&#39;m having difficulties implementing it using mouse since movement to a specific side isn&#39;t that clear (i.e moving left can include moving up or down).
+I want to use the &lt;code&gt;matrix3d&lt;/code&gt; in order to receive changed values of the position.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT #2&lt;/strong&gt; Here is a &lt;a href=&quot;http://jsfiddle.net/WQeHb/&quot;&gt;jsfiddle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt; I&#39;ve pasted the new code I&#39;ve managed to resolve:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document).on(&#39;mousemove&#39;, function (e) {
+        var MOVE = 10; // how much to move
+        var XTURN = 1; // how much to rotate
+        var YTURN = 1; // how much to rotate
+        var transformer, origMat, translationMatrix, result;
+        transformer = document.getElementById(&quot;transformer&quot;);
+
+        if ($.browser.webkit)
+            origMat = new WebKitCSSMatrix(window.getComputedStyle(transformer).webkitTransform);
+
+        //turn left
+        if (e.pageX &amp;lt; xPrev) {
+            if (XTURN &amp;lt; 0) {
+                XTURN *= -1;
+            }
+            xPrev = e.pageX;
+        //turn right
+        } else {
+            if (XTURN &amp;gt; 0) {
+                XTURN *= -1;
+            }
+            xPrev = e.pageX;
+
+        }
+        //look up
+        if (e.pageY &amp;lt; yPrev) {
+            if (YTURN &amp;lt; 0) {
+                YTURN *= -1;
+            } 
+            yPrev = e.pageY;
+        //look down
+        } else {
+            if (YTURN &amp;gt; 0) {
+                YTURN *= -1;
+            }
+            yPrev = e.pageY;
+        }
+
+        translationMatrix = new WebKitCSSMatrix(&quot;matrix3d(&quot; + cos(XTURN).toFixed(10) + &quot;,0,&quot; + sin(XTURN).toFixed(10) + &quot;,0,0,&quot;+ cos(-YTURN).toFixed(10) +&quot;,&quot;+ sin(YTURN).toFixed(10) +&quot;,0, &quot; + sin(-XTURN).toFixed(10) + &quot;,&quot;+ sin(-YTURN).toFixed(10) +&quot;,&quot; + cos(XTURN).toFixed(10) + &quot;,0,0,0,0,1)&quot;);
+
+        transformer.style.webkitTransform = translationMatrix.multiply(origMat).toString();
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see (Sorry for the one line matrix) I&#39;m stating the changes of the X and Y rotations on the same matrix change and then committing it, the issue now is with the &lt;code&gt;cos(XTURN).toFixed(10)&lt;/code&gt; which can be related to the X and Y rotations, so you can see it works but not perfect.
+Would appreciate any tips/ideas.&lt;/p&gt;
+
+&lt;p&gt;P.S I don&#39;t want to use the &lt;a href=&quot;http://www.html5rocks.com/en/tutorials/pointerlock/intro/&quot;&gt;Pointer Lock API&lt;/a&gt;, even though it&#39;s great, since I want it to support maximal number of browsers.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404371</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Stop slide when ended</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="mobile"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="slider"/>
+        <author>
+            <name>Bvweijen</name>
+            <uri>http://stackoverflow.com/users/1948705</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404371/stop-slide-when-ended" />
+        <published>2013-08-23T13:41:01Z</published>
+        <updated>2013-08-23T14:02:05Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m working with idangero slider and i wanna stop the slider when he reached the second slider. (slider: &lt;a href=&quot;http://www.idangero.us/sliders/swiper/api.php&quot; rel=&quot;nofollow&quot;&gt;http://www.idangero.us/sliders/swiper/api.php&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;You can onlu slide once, after that he has to stop.
+You can see a example here: &lt;a href=&quot;http://www.bvweijen.nl/23g/slider/index.php&quot; rel=&quot;nofollow&quot;&gt;www.bvweijen.nl/23g/slider/index.php&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;It is a mobile slider.&lt;/p&gt;
+
+&lt;p&gt;I have tried this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;script&amp;gt;
+            var mySwiper = new Swiper(&#39;.swiper-container&#39;,{
+               speed : 800,
+               grabCursor: true,
+               paginationClickable: true,
+               onSlideChangeEnd : function() {
+               if(mySwiper.activeIndex &amp;gt; 0){
+                    mySwiper.params.noSwiping = true
+                }
+                //alert(&#39;OMG you touch the slide!&#39;) 
+           },
+        })
+    &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;He can find the activeIndex, but noSwiping = true doesn&#39;t work.&lt;/p&gt;
+
+&lt;p&gt;I hope someone can help me.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404319</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Autosaving form data using ajax calls</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/>
+        <author>
+            <name>M99</name>
+            <uri>http://stackoverflow.com/users/564444</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404319/autosaving-form-data-using-ajax-calls" />
+        <published>2013-08-23T13:39:03Z</published>
+        <updated>2013-08-23T14:01:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to auto save the form data at the server side using ajax calls. I start the auto save 20 seconds after any input change. If one auto save call is in progress, I want to wait. Following are the steps I am taking. My approach depends on a javascript global variable and I have a fear that I might run into some kind of synchronization issues. Is there any other better way to do this?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(&#39;input&#39;).change(function() {
+            if (autoSaveInProgress == false) {
+                //call ajax function in 20secodns.
+                setTimeout(autoSaveFunction, 20000);
+                autoSaveInProgress = true;
+            }
+        });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I set the autoSaveInProgress to false in the autoSaveFunction after receiving the response from server.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18403070</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">how to remove everything except numeric 1234567890 using javascript</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/>
+        <author>
+            <name>usman610</name>
+            <uri>http://stackoverflow.com/users/2473807</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18403070/how-to-remove-everything-except-numeric-1234567890-using-javascript" />
+        <published>2013-08-23T12:37:00Z</published>
+        <updated>2013-08-23T14:01:31Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i have the following javascript how and where to set so when it will get the data and shows in a textbox it will show only numeric values:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+function showData($sel){
+   var str=&#39;&#39;;
+   document.getElementById(&quot;demo&quot;).innerHTML;
+   for (var i=0;i&amp;lt;sel.options.length;i++){
+           str+=(str!=&#39;&#39;) ? &#39;, &#39;+sel.options[i].value : sel.options[i].value;
+       }
+   }
+   sel.form.selectedFruits.value = str;
+}
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;i have multiple select dropdown and it has multiple values like Staff No and email so i dont want to show email in text box only staff no and even i dont want to remove email from values.&lt;/p&gt;
+
+&lt;p&gt;it is working fine except what i want to do :D&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404440</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How to make the all select checkbox workable upon deselecting few of the checkboxes?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="checkbox"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="selectall"/>
+        <author>
+            <name>phpLover</name>
+            <uri>http://stackoverflow.com/users/1897974</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404440/how-to-make-the-all-select-checkbox-workable-upon-deselecting-few-of-the-checkbo" />
+        <published>2013-08-23T13:44:32Z</published>
+        <updated>2013-08-23T14:01:15Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m using PHP and Smarty for my website.For your reference I&#39;m putting here the code snippet from smarty template alongwith the jQuery code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;spl-btn-wrap fl-left&quot;&amp;gt;
+      &amp;lt;div class=&quot;spl-btn-in&quot;&amp;gt;
+        &amp;lt;div class=&quot;spl-btn&quot;&amp;gt;
+          &amp;lt;p id=&quot;parentCheckbox&quot; class=&quot;custom-form&quot;&amp;gt; 
+            &amp;lt;input class=&quot;custom-check&quot; type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;ckbCheckAll&quot;&amp;gt;
+            &amp;lt;a class=&quot;drop&quot; href=&quot;#&quot;&amp;gt;more&amp;lt;/a&amp;gt; 
+          &amp;lt;/p&amp;gt;
+
+        &amp;lt;/div&amp;gt; 
+      &amp;lt;/div&amp;gt;  
+    &amp;lt;/div&amp;gt;
+&amp;lt;table class=&quot;tablesorter&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; id=&quot;tests_listing&quot; width=&quot;100%&quot;&amp;gt;
+{section name=tests loop=$all_tests}
+&amp;lt;tr id=&quot;tests_listing-row-{$all_tests[tests].test_id}&quot;&amp;gt;&amp;lt;td class=&quot;dragHandle&quot;&amp;gt;
+&amp;lt;td&amp;gt;
+  &amp;lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; class=&quot;tbl-test&quot; &amp;gt;
+   &amp;lt;tr&amp;gt;
+     &amp;lt;th align=&quot;left&quot;&amp;gt;
+      &amp;lt;p class=&quot;custom-form&quot;&amp;gt; 
+        &amp;lt;input class=&quot;custom-check checkBoxClass&quot; type=&quot;checkbox&quot; name=&quot;&quot; id=&quot;&quot;&amp;gt;
+        &amp;lt;label&amp;gt;{$all_tests[tests].test_name}&amp;lt;/label&amp;gt;
+      &amp;lt;/p&amp;gt;
+&amp;lt;/th&amp;gt;
+&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+  &amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+  {sectionelse}
+&amp;lt;/table&amp;gt;
+{literal}
+&amp;lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&amp;gt;
+$(document).ready(function()  { 
+    $(&quot;.view_test_details&quot;).colorbox({width:800, href:$(this).attr(&#39;href&#39;)});
+
+  $(&quot;#ckbCheckAll&quot;).click(function () { 
+    if ($(this).is(&#39;:not(:checked)&#39;))
+      $(&quot;.ez-checkbox&quot;).removeClass(&quot;ez-checked&quot;);
+
+    if($(this).is(&#39;:checked&#39;))
+      $(&quot;.ez-checkbox&quot;).addClass(&quot;ez-checked&quot;);
+  });
+
+  $(&quot;.checkBoxClass&quot;).click(function(){  
+     var all = $(&#39;.checkBoxClass&#39;);
+    if (all.length === all.filter(&#39;:checked&#39;).length) {
+      //$(&quot;p#parentCheckbox div&quot;).addClass(&quot;ez-checked&quot;);
+      $(&quot;#ckbCheckAll&quot;).prop(&quot;checked&quot;, true);
+    } else {
+      //$(&quot;p#parentCheckbox div&quot;).removeClass(&quot;ez-checked&quot;); 
+      $(&quot;#ckbCheckAll&quot;).prop(&quot;checked&quot;, false);
+    }
+    if (!$(this).prop(&quot;checked&quot;)){
+      //$(&quot;p#parentCheckbox div&quot;).removeClass(&quot;ez-checked&quot;);
+      $(&quot;#ckbCheckAll&quot;).prop(&quot;checked&quot;,false);
+    }
+  });
+});      
+&amp;lt;/script&amp;gt;
+{/literal}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now the scenario is when the page loads completely the following  code wraps around the checkbox as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;ez-checkbox&quot;&amp;gt;
+&amp;lt;input id=&quot;&quot; class=&quot;custom-check ez-hide&quot; type=&quot;checkbox&quot; name=&quot;&quot;&amp;gt;&amp;lt;/input&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When the checkbox is selected the class named &quot;ez-checked&quot; added to the div as follows:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&quot;ez-checkbox ez-checked&quot;&amp;gt;
+    &amp;lt;input id=&quot;&quot; class=&quot;custom-check ez-hide&quot; type=&quot;checkbox&quot; name=&quot;&quot;&amp;gt;&amp;lt;/input&amp;gt;
+    &amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Upon unchecking the checkbox the class get removed. I want to work on this basic idea of applying and removing &quot;ez-checked&quot; class.
+Now I want to add the typical Select all checkbox functionality. I&#39;ve written code for it. But the issue is it is working for all checkboxes. I want to make it workable if few checkboxes are selected too. Can you help me to resolve my issue? Thanks in advance. If you need any further information I can provide you with the same.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404360</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Jquery Hide Show ScrollTop</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="animation"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="mousehover"/>
+        <author>
+            <name>W.H.</name>
+            <uri>http://stackoverflow.com/users/2657159</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404360/jquery-hide-show-scrolltop" />
+        <published>2013-08-23T13:40:44Z</published>
+        <updated>2013-08-23T14:01:00Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;i am looking for a way to show the children of my div when i scroll down . &lt;/p&gt;
+
+&lt;p&gt;Here my code :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$(document).ready(function (e) {
+
+    var test = 0;
+    $(&#39;#one&#39;).children(&#39;div&#39;).hide().css({
+        &#39;overflow&#39;: &#39;hidden&#39;
+    });
+
+    $(&#39;#one&#39;).hover(function () {
+        $(this).children(&#39;div&#39;).stop(true, true).show(&#39;slow&#39;);
+    }, function () {
+        $(this).children(&#39;div&#39;).stop(true, true).hide(&#39;slow&#39;);
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When i scroll down like two time ( ~ 30 pix) , i want to show the div children so when the user reach again the top of his screen he can see the div children but this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if ($(window).scrollTop() &amp;gt;11) {
+        test+=1;
+    }
+
+if(test!==0){
+    $(&#39;#one&#39;).children(&#39;div&#39;).show().css({
+       &#39;overflow&#39;: &#39;visible&#39;
+    });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;seems not to work. I want this trick to work without modify the mousehoverfunction. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jsfiddle.net/DatKebab/448mj/55/&quot; rel=&quot;nofollow&quot;&gt;here the jsfiddle for better understanding&lt;/a&gt;.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18403018</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Trying to apply a custom scroll bar</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="css"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="interface"/>
+        <author>
+            <name>clestcruz</name>
+            <uri>http://stackoverflow.com/users/2500177</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18403018/trying-to-apply-a-custom-scroll-bar" />
+        <published>2013-08-23T12:34:18Z</published>
+        <updated>2013-08-23T14:00:41Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to apply a similar type of custom scroll bar into my website but I seem to be having some trouble. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i255.photobucket.com/albums/hh140/testament1234/custom-scroll-bar_zpsabe4521a.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just want to know if this kind of custom scroll bar is complicated or easy to implement. This is the last obstacle in finishing my design. What are some suggestions or ideas for implementing this design?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18402223</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">HighCharts. Change options dynamically</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="highcharts"/>
+        <author>
+            <name>Александр Леднев</name>
+            <uri>http://stackoverflow.com/users/2590511</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18402223/highcharts-change-options-dynamically" />
+        <published>2013-08-23T11:54:23Z</published>
+        <updated>2013-08-23T14:00:36Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I set tooltip option &lt;code&gt;enabled = FALSE&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I want change it to &lt;code&gt;TRUE&lt;/code&gt; when user clicks on point. &lt;/p&gt;
+
+&lt;p&gt;How can I do it?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;series : [{
+            data : data,
+            dataGrouping: {
+                enabled: false
+            },
+            events: {
+                click: function(e) {
+                    enabledTooltip();
+                }
+            }
+        }],
+//.......................        
+var enabledTooltip = function(){
+ // what I should write here?
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;};&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404478</id>
+        <re:rank scheme="http://stackoverflow.com">-2</re:rank>
+        <title type="text">Show first Wordpress post in a special shape</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="css"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="image"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="wordpress"/>
+        <author>
+            <name>Joe</name>
+            <uri>http://stackoverflow.com/users/2414521</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404478/show-first-wordpress-post-in-a-special-shape" />
+        <published>2013-08-23T13:46:18Z</published>
+        <updated>2013-08-23T14:00:21Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I think I need some help for the right direction of how I may pull off this trick. &lt;/p&gt;
+
+&lt;p&gt;I am using Wordpress 3.4.2.&lt;/p&gt;
+
+&lt;p&gt;I need to write a code that will show the first post image on the homepage masked in a shape (rectangular with &lt;code&gt;10px&lt;/code&gt; rounded corners). When I click to view the post I need that mask to be removed and to display the full image.&lt;/p&gt;
+
+&lt;p&gt;Is this possible with CSS or will it need to be JavaScript?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404741</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Decode special characters in my stream</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="uri"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="decode"/>
+        <author>
+            <name>user2302725</name>
+            <uri>http://stackoverflow.com/users/2302725</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404741/decode-special-characters-in-my-stream" />
+        <published>2013-08-23T14:00:19Z</published>
+        <updated>2013-08-23T14:00:19Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am reading data from an url thanks to this code :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;openURLInputStream: function(url)
+{
+    const ioService = Components.classes[&#39;@mozilla.org/network/io-service;1&#39;].getService(Components.interfaces.nsIIOService);
+    var uri = ioService.newURI(url, null, null);
+    var stream = ioService.newChannelFromURI(uri).open();
+    var sis = Components.classes[&#39;@mozilla.org/scriptableinputstream;1&#39;].createInstance(Components.interfaces.nsIScriptableInputStream);
+    sis.init(stream);
+    return sis;
+}
+
+var stream = openURLInputStream(url);
+var content = stream.read(stream.available());
+stream.close();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now my &quot;content&quot;   variable contains the data but they are encoded, I would need to get them decoded. How can I do ? I got some responses thanks to the decodeURI and encodeURI methods but I don&#39;t know if they are good in my case. And if yes, how to use them.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404148</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">how do I detect if window.location failed?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript-events"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="window.location"/>
+        <author>
+            <name>sagimann</name>
+            <uri>http://stackoverflow.com/users/389023</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404148/how-do-i-detect-if-window-location-failed" />
+        <published>2013-08-23T13:31:30Z</published>
+        <updated>2013-08-23T14:00:17Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;how do I check if a call to window.location failed because the given URL was invalid, etc? Is there some event I can set on the window object or on some other object that can catch this?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404733</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">difference between assigning method to prototype inside or outside the function</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/>
+        <author>
+            <name>Maximus</name>
+            <uri>http://stackoverflow.com/users/2545680</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404733/difference-between-assigning-method-to-prototype-inside-or-outside-the-function" />
+        <published>2013-08-23T13:59:45Z</published>
+        <updated>2013-08-23T13:59:45Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have the function that acts as a base class and I want to add method to it. I can add method to function&#39;s prototype by name (outside the function) or without referencing the function&#39;s name (inside the function):&lt;/p&gt;
+
+&lt;p&gt;1) Reference name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Base.prototype.getResult = function () {
+            return 5;
+        }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;2) Do not reference the name&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function Base() {
+    this.constructor.prototype.getResult = function () {
+        return 5;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I&#39;m curios what&#39;s the difference between these two approaches (what are the implications)?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18403806</id>
+        <re:rank scheme="http://stackoverflow.com">3</re:rank>
+        <title type="text">How to call xml (title) tags using Javascript</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="xml"/>
+        <author>
+            <name>user2711066</name>
+            <uri>http://stackoverflow.com/users/2711066</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18403806/how-to-call-xml-title-tags-using-javascript" />
+        <published>2013-08-23T13:14:39Z</published>
+        <updated>2013-08-23T13:59:44Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have one xml file which main root starts with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;design title=&quot;standard Cards 3.5 x 2&quot; &amp;gt;
+      &amp;lt;previews&amp;gt;&amp;lt;/previews&amp;gt;
+      &amp;lt;previews1&amp;gt;&amp;lt;/previews1&amp;gt;
+      &amp;lt;previews2&amp;gt;&amp;lt;/previews2&amp;gt;
+   &amp;lt;/design&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want to read that xml files and get title tags and assign in option value.&lt;/p&gt;
+
+&lt;p&gt;I also got this &lt;code&gt;design&lt;/code&gt; root tags by using this &lt;a href=&quot;http://www.w3schools.com/dom/dom_examples.asp&quot; rel=&quot;nofollow&quot;&gt;w3school method&lt;/a&gt; .i want to get &lt;code&gt;design&lt;/code&gt; --&gt; &lt;code&gt;title&lt;/code&gt; and stored into my select box:&lt;/p&gt;
+
+&lt;p&gt;Here my code: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var selectHTML = &quot;&quot;;
+selectHTML += &quot;&amp;lt;select name=&#39;something&#39; id=&#39;media&#39; onchange=&#39;select();&#39;&amp;gt;&quot;;
+for (i = 0; i &amp;lt; total.length; i = i + 1) {
+    if (total[i] != &#39;&#39;) {
+        xmlDoc = loadXMLDoc($loc);
+        var fruits = xmlDoc.documentElement.nodeName;
+        if (fruits) {
+            alert(fruits);
+            var name = xmlDoc.getElementsByTagName(&quot;design&quot;)
+            alert(name);
+        }
+        selectHTML += &quot;&amp;lt;option value=&#39;&quot; + total[i] + &quot;&#39;&amp;gt;&quot; + name + &quot;&amp;lt;/option&amp;gt;&quot;;
+    }
+}
+selectHTML += &quot;&amp;lt;/select&amp;gt;&quot;;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here &lt;code&gt;xmlDoc=loadXMLDoc($loc);&lt;/code&gt; is calling method of xml files.I refer this from &lt;a href=&quot;http://www.w3schools.com/dom/dom_nodes_access.asp&quot; rel=&quot;nofollow&quot;&gt;w3school tutorial&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I just alerting &lt;strong&gt;&lt;code&gt;name&lt;/code&gt;&lt;/strong&gt;  it resulting undefined. How to solve this? &lt;/p&gt;
+
+&lt;p&gt;I want to place &lt;strong&gt;&lt;code&gt;name&lt;/code&gt;&lt;/strong&gt; value into my select box option value. How to read xml files using javascript and place into option value?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404641</id>
+        <re:rank scheme="http://stackoverflow.com">4</re:rank>
+        <title type="text">Javascript variable initialization</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/>
+        <author>
+            <name>Jacques</name>
+            <uri>http://stackoverflow.com/users/2542294</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404641/javascript-variable-initialization" />
+        <published>2013-08-23T13:54:36Z</published>
+        <updated>2013-08-23T13:59:42Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;There, an odd thing just happened..&lt;/p&gt;
+
+&lt;p&gt;Normally I assign my global variables like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;orders = [];
+pOrders = [];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But I was lazy and just wrote:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;orders = pOrders = [];
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It should mean the same, shouldn&#39;t it??&lt;/p&gt;
+
+&lt;p&gt;Apparently not because the array &lt;code&gt;pOrder&lt;/code&gt; also contained the array &lt;code&gt;orders&lt;/code&gt; data. I sat for 15 min looking for a bug in my code but couldn&#39;t find any so I just tried writing the variables as I normally would and it worked. Why does this happen?&lt;/p&gt;
+
+&lt;p&gt;In PHP, the logic would be the same, but JavaScript seems to behave differently.&lt;/p&gt;
+
+&lt;p&gt;Please could anyone provide me with some information, or knowledge..&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404656</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">ios: how to detect if a custom url scheme link failed?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="ios"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="url-scheme"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="custom-url"/>
+        <author>
+            <name>sagimann</name>
+            <uri>http://stackoverflow.com/users/389023</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404656/ios-how-to-detect-if-a-custom-url-scheme-link-failed" />
+        <published>2013-08-23T13:55:34Z</published>
+        <updated>2013-08-23T13:59:36Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have an HTML page containing a link to a custom URL scheme, displayed on iPhone .e.g
+myapp://localhost/&lt;/p&gt;
+
+&lt;p&gt;Assuming the user clicks it, but there is no app that can respond to this scheme, how do I catch this in javascript (that the link cannot be opened)?&lt;/p&gt;
+
+&lt;p&gt;tnx&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18399690</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">infinite ajax scroll joomla 2.5</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="ajax"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="joomla"/>
+        <author>
+            <name>user2659607</name>
+            <uri>http://stackoverflow.com/users/2659607</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18399690/infinite-ajax-scroll-joomla-2-5" />
+        <published>2013-08-23T09:44:00Z</published>
+        <updated>2013-08-23T13:59:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I tried to implemented the infinite ajax scroll on my joomla 2.5 installation.&lt;/p&gt;
+
+&lt;p&gt;I use:
+&lt;a href=&quot;https://github.com/webcreate/infinite-ajax-scroll&quot; rel=&quot;nofollow&quot;&gt;https://github.com/webcreate/infinite-ajax-scroll&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Almost everything works exept loading the next page...
+In joomla the nextpage url is some like: ...&lt;strong&gt;/start%%&lt;/strong&gt;  (%% = number of articles)&lt;/p&gt;
+
+&lt;p&gt;In the &lt;a href=&quot;https://raw.github.com/webcreate/infinite-ajax-scroll/master/dist/jquery-ias.js&quot; rel=&quot;nofollow&quot;&gt;https://raw.github.com/webcreate/infinite-ajax-scroll/master/dist/jquery-ias.js&lt;/a&gt; i have to make some changes i think, but i&#39;m not an javascript expert :(&lt;/p&gt;
+
+&lt;p&gt;now the extension will load an url like ...&lt;strong&gt;#/page/2&lt;/strong&gt;
+But it won&#39;t work in joomla.&lt;/p&gt;
+
+&lt;p&gt;It should be ...&lt;strong&gt;/start%%&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;Maybe someone can help me out &lt;/p&gt;
+
+&lt;p&gt;An other sollution is also welcome :D&lt;/p&gt;
+
+&lt;p&gt;Thanks&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18402164</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">TypeError: chat.send is not a function</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="c#"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="asp.net-mvc-4"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="signalr"/>
+        <author>
+            <name>M K</name>
+            <uri>http://stackoverflow.com/users/2710781</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18402164/typeerror-chat-send-is-not-a-function" />
+        <published>2013-08-23T11:50:54Z</published>
+        <updated>2013-08-23T13:56:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;So, i am pretty new to SignalR(just started playing with it this week) but havent got it to work yet. Im trying to get a simple chat working in MVC 4 but ive been stuck for some time now, this is what i have so far, any hints or tips would be useful!&lt;/p&gt;
+
+&lt;p&gt;The error i currently get with firebug is this:
+&quot;TypeError: chat.send is not a function&quot;&lt;/p&gt;
+
+&lt;p&gt;Startup.cs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Microsoft.AspNet.SignalR;
+using Owin;
+
+namespace SignalRWebChatVer2
+{
+    public class Startup
+    {
+        public void Configuration(IAppBuilder app)
+        {
+            var config = new HubConfiguration
+                {
+                    EnableCrossDomain = true
+                };
+            app.MapHubs(config);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ChatHub.cs&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using Microsoft.AspNet.SignalR;
+using Microsoft.AspNet.SignalR.Hubs;
+
+namespace SignalRWebChatVer2
+{
+    [HubName(&quot;ChatHub&quot;)]
+    public class ChatHub : Hub
+    {
+        public void Send(string messages)
+        {
+            Clients.All.addMessage(messages);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Chat.cshtml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@{
+ViewBag.Title = &quot;Chat&quot;;
+Layout = &quot;~/Views/Shared/_Layout.cshtml&quot;;
+}
+
+&amp;lt;h2&amp;gt;Chat&amp;lt;/h2&amp;gt;
+&amp;lt;div&amp;gt;
+    &amp;lt;input type=&quot;text&quot; id=&quot;msg&quot;/&amp;gt;
+    &amp;lt;input type=&quot;button&quot; id=&quot;broadcast&quot; value=&quot;Send&quot;/&amp;gt;
+    &amp;lt;ul id=&quot;messages&quot;&amp;gt;&amp;lt;/ul&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;_Layout.csthml&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&quot;en&quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&quot;utf-8&quot; /&amp;gt;
+        &amp;lt;title&amp;gt;@ViewBag.Title - My ASP.NET MVC Application&amp;lt;/title&amp;gt;
+        &amp;lt;link href=&quot;~/favicon.ico&quot; rel=&quot;shortcut icon&quot; type=&quot;image/x-icon&quot; /&amp;gt;
+        &amp;lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&amp;gt;
+
+    &amp;lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&quot;@Url.Content(&quot;~/Scripts/jquery.signalR-2.0.0-beta2.js&quot;)&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script src=&quot;@Url.Content(&quot;~/signalr/hubs&quot;)&quot; type=&quot;text/javascript&quot;&amp;gt;&amp;lt;/script&amp;gt;
+
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+        $(function() {
+            var chat = $.connection.chatHub;
+
+            //$.connection.hub.start();
+            chat.client.addMessage = function(messages) {
+                $(&quot;#messages&quot;).append(&#39;&amp;lt;li&amp;gt;&#39; + messages + &#39;&amp;lt;/li&amp;gt;&#39;);
+            };
+
+            $.connection.hub.start().done(function() {
+                $(&quot;#broadcast&quot;).click(function() {
+                    //var message = $(&#39;#msg&#39;).val();
+                    chat.send($(&#39;#msg&#39;).val());
+                    //chat.server.send(message);
+                });
+            });
+        });
+    &amp;lt;/script&amp;gt;
+    &amp;lt;header&amp;gt;
+        &amp;lt;div class=&quot;content-wrapper&quot;&amp;gt;
+            &amp;lt;div class=&quot;float-left&quot;&amp;gt;
+                &amp;lt;p class=&quot;site-title&quot;&amp;gt;@Html.ActionLink(&quot;your logo here&quot;, &quot;Index&quot;, &quot;Home&quot;)&amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+            &amp;lt;div class=&quot;float-right&quot;&amp;gt;
+                &amp;lt;section id=&quot;login&quot;&amp;gt;
+                    @Html.Partial(&quot;_LoginPartial&quot;)
+                &amp;lt;/section&amp;gt;
+                &amp;lt;nav&amp;gt;
+                    &amp;lt;ul id=&quot;menu&quot;&amp;gt;
+                        &amp;lt;li&amp;gt;@Html.ActionLink(&quot;Home&quot;, &quot;Index&quot;, &quot;Home&quot;)&amp;lt;/li&amp;gt;
+                        &amp;lt;li&amp;gt;@Html.ActionLink(&quot;About&quot;, &quot;About&quot;, &quot;Home&quot;)&amp;lt;/li&amp;gt;
+                        &amp;lt;li&amp;gt;@Html.ActionLink(&quot;Contact&quot;, &quot;Contact&quot;, &quot;Home&quot;)&amp;lt;/li&amp;gt;
+                        &amp;lt;li&amp;gt;@Html.ActionLink(&quot;Chat&quot;, &quot;Chat&quot;, &quot;Home&quot;)&amp;lt;/li&amp;gt;
+                    &amp;lt;/ul&amp;gt;
+                &amp;lt;/nav&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/header&amp;gt;
+    &amp;lt;div id=&quot;body&quot;&amp;gt;
+        @RenderSection(&quot;featured&quot;, required: false)
+        &amp;lt;section class=&quot;content-wrapper main-content clear-fix&quot;&amp;gt;
+            @RenderBody()
+        &amp;lt;/section&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;footer&amp;gt;
+        &amp;lt;div class=&quot;content-wrapper&quot;&amp;gt;
+            &amp;lt;div class=&quot;float-left&quot;&amp;gt;
+                &amp;lt;p&amp;gt;&amp;amp;copy; @DateTime.Now.Year - My ASP.NET MVC Application&amp;lt;/p&amp;gt;
+            &amp;lt;/div&amp;gt;
+        &amp;lt;/div&amp;gt;
+    &amp;lt;/footer&amp;gt;
+    @*@RenderSection(&quot;scripts&quot;, required: false)*@
+&amp;lt;/body&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Is there anything more you need to see? If so just hit me up and i will get back ASAP. &lt;/p&gt;
+
+&lt;p&gt;Anyway, thanks in advance. 
+Best regards, &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18360867</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">how to add nodes to a jquery tree using markup?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="tree"/>
+        <author>
+            <name>GreyCloud</name>
+            <uri>http://stackoverflow.com/users/397268</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18360867/how-to-add-nodes-to-a-jquery-tree-using-markup" />
+        <published>2013-08-21T14:58:18Z</published>
+        <updated>2013-08-23T13:56:00Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;how can I add new nodes (at run time) to a jquery easyui tree I have created from html markup? (creating the tree using this method: &lt;a href=&quot;http://www.jeasyui.com/tutorial/tree/tree1.php&quot; rel=&quot;nofollow&quot;&gt;http://www.jeasyui.com/tutorial/tree/tree1.php&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;I have new markup representing the nodes that I want to add to the tree (this in the form of html ul / li &#39;s ).&lt;/p&gt;
+
+&lt;p&gt;this question is similar to &lt;a href=&quot;https://groups.google.com/forum/#!topic/jstree/o3GOqAuD6O4&quot; rel=&quot;nofollow&quot;&gt;https://groups.google.com/forum/#!topic/jstree/o3GOqAuD6O4&lt;/a&gt; but I cannot work out how to implement the answer given there. &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/14220321</id>
+        <re:rank scheme="http://stackoverflow.com">149</re:rank>
+        <title type="text">How to return the response from an AJAX call?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="ajax"/>
+        <author>
+            <name>Felix Kling</name>
+            <uri>http://stackoverflow.com/users/218196</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/14220321/how-to-return-the-response-from-an-ajax-call" />
+        <published>2013-01-08T17:06:14Z</published>
+        <updated>2013-08-23T13:55:16Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a function &lt;code&gt;foo&lt;/code&gt; which makes an AJAX request. How can I return the response from &lt;code&gt;foo&lt;/code&gt;? &lt;/p&gt;
+
+&lt;p&gt;I tried to return the value from the &lt;code&gt;success&lt;/code&gt; callback as well as assigning the response to a local variable inside the function and return that one, but none of those ways actually return the response.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function foo() {
+    var result;
+
+    $.ajax({
+        url: &#39;...&#39;,
+        success: function(response) {
+            result = response;
+            // return response; // &amp;lt;- tried that one as well
+        }
+    });
+
+    return result;
+}
+
+var result = foo(); // always ends up being `undefined`.
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18132350</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">RGraph and IE 8 wont render graph correctly</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="c#"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="asp.net"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="rgraph"/>
+        <author>
+            <name>DWolf</name>
+            <uri>http://stackoverflow.com/users/1732266</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18132350/rgraph-and-ie-8-wont-render-graph-correctly" />
+        <published>2013-08-08T17:30:16Z</published>
+        <updated>2013-08-23T13:54:50Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I am trying to make a simple pie chart on a report page i am working on.  My Client uses IE8 for all of their systems.  RGraph provides the best available graphing in my opinion and its the graphing tool that my boss requires me to use.  So no change in convincing me otherwise.&lt;br&gt;
+Also i am using asp.net &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/libraries/RGraph.common.key.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/libraries/RGraph.drawing.rect.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/libraries/RGraph.common.core.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/libraries/RGraph.common.dynamic.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/libraries/RGraph.common.tooltips.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&quot;text/javascript&quot; src=&quot;/js/RGraph/librarieslibraries/RGraph.pie.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;!--[if lt IE 9]&amp;gt;&amp;lt;script src=&quot;/js/RGraph/excanvas/excanvas.js&quot;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;![endif]--&amp;gt;
+
+&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;
+    function renderMap() {
+        &amp;lt;%= GetPie() %&amp;gt;;
+    }
+   $(document).ready(function () {
+        renderMap();
+    });
+ &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and my canvas &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  &amp;lt;canvas id=&quot;myPie&quot; width=&quot;500&quot; height=&quot;300&quot;&amp;gt;[No Canvas Support]&amp;lt;/canvas&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and my .net behind code portion&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;protected string GetCounts()
+{
+  // cut out code //
+  //  var longs = [1,2,3,4] 
+  //  var names = [&quot;program1&quot;, &quot;program2&quot;, &quot;program3&quot;, &quot;program4&quot;]
+  //  var precents = [&quot;1.2%&quot;, &quot;1.3%&quot;, &quot;1.4%&quot;, &quot;1.5%&quot;]
+  //  these values are hard coded on here not on my page
+  // its for my clients protection that i use false data
+
+    StringBuilder output = new StringBuilder();
+    output.Append(&quot;var pie = new RGraph.Pie(&#39;myPie&#39;, [&quot;);
+    output.Append(TotalEmployeeList.Count - totalOfthese + &quot;, &quot;);
+    output.Append(longs);
+    output.Append(&quot;])&quot;);
+    output.Append(&quot;.Set(&#39;labels&#39;, [&quot;);
+    output.Append(&quot;\&quot;&quot; + GetPercent(Utility.ToDouble(TotalEmployeeList.Count - totalOfthese)) + &quot; Unqualified\&quot;, &quot;);
+    output.Append(percent);
+    output.Append(&quot;])&quot;);
+    output.Append(&quot;.Set(&#39;labels.sticks&#39;, [true])&quot;);
+    output.Append(&quot;.Set(&#39;labels.sticks.length&#39;, 20)&quot;);
+    output.Append(&quot;.Set(&#39;key&#39;, [&#39;Unqualified&#39;,&quot;);
+    output.Append(names);
+    output.Append(&quot;])&quot;);
+    output.Append(&quot;.Set(&#39;key.colors&#39;, [&#39;#a7a8aa&#39;,&#39;#003057&#39;,&#39;#009fdf&#39;,&#39;#e87722&#39;,&#39;#a7a8aa&#39;,&#39;#003057&#39;, &#39;#009fdf&#39;])&quot;);
+    output.Append(&quot;.Set(&#39;key.interactive&#39;, true)&quot;);
+    output.Append(&quot;.Set(&#39;key.position&#39;, &#39;gutter&#39;)&quot;);
+    output.Append(&quot;.Set(&#39;key.position.y&#39;, 275)&quot;);
+    output.Append(&quot;.Set(&#39;key.rounded&#39;, false)&quot;);
+    output.Append(&quot;.Set(&#39;colors&#39;, [&#39;#a7a8aa&#39;,&#39;#003057&#39;,&#39;#009fdf&#39;,&#39;#e87722&#39;,&#39;#a7a8aa&#39;,&#39;#003057&#39;,&#39;#009fdf&#39;])&quot;);
+    output.Append(&quot;.Set(&#39;strokestyle&#39;, &#39;white&#39;)&quot;);
+    output.Append(&quot;.Set(&#39;linewidth&#39;, 3)&quot;);
+    output.Append(&quot;.Set(&#39;shadow&#39;, true)&quot;);
+    output.Append(&quot;.Set(&#39;shadow.offsetx&#39;, 2)&quot;);
+    output.Append(&quot;.Set(&#39;shadow.offsety&#39;, 2)&quot;);
+    output.Append(&quot;.Set(&#39;shadow.blur&#39;, 3)&quot;);
+    output.Append(&quot;.Set(&#39;exploded&#39;, 7)&quot;);
+    output.Append(&quot;.Set(&#39;chart.radius&#39;, 100)&quot;);
+    output.Append(&quot;.Set(&#39;origin&#39;, 0)&quot;);
+    output.Append(&quot;.Draw();&quot;);
+
+    return output.ToString();
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;my problem here is that the key and the pie chart work in all browsers but not ie 8.. and partially in ie 9. is there anything that i am missing? that would prevent IE from working correctly?  &lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18398153</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">JSON file and execute javascript</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="json"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="google-analytics"/>
+        <author>
+            <name>R&#233;mi Santos</name>
+            <uri>http://stackoverflow.com/users/2287767</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18398153/json-file-and-execute-javascript" />
+        <published>2013-08-23T08:23:43Z</published>
+        <updated>2013-08-23T13:54:28Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have a &lt;code&gt;PHP&lt;/code&gt; file that returns &lt;code&gt;JSON data&lt;/code&gt;. But I want to execute some &lt;code&gt;javascript&lt;/code&gt; (Google Analytics code)&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s my code : &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+   header(&#39;Content-Type: application/json&#39;);
+
+   //GOOGLE ANALYTICS SCRIPT
+   $js = &quot;&amp;lt;script&amp;gt;(function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,&#39;script&#39;,&#39;//www.google-analytics.com/analytics.js&#39;,&#39;ga&#39;);
+
+      ga(&#39;create&#39;, &#39;UA-XXXXXXXX-3&#39;, &#39;loopse.com&#39;);
+      ga(&#39;send&#39;, &#39;pageview&#39;);
+
+     &amp;lt;/script&amp;gt;&quot;;
+
+   echo $js;
+
+   //some code to get data
+   echo json_encode($data); 
+?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Everything works fine without js code, but i need to execute this js to track web services of my app.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18403843</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Adding a dynamic attribute name to a selection</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="d3.js"/>
+        <author>
+            <name>gonvaled</name>
+            <uri>http://stackoverflow.com/users/647991</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18403843/adding-a-dynamic-attribute-name-to-a-selection" />
+        <published>2013-08-23T13:16:12Z</published>
+        <updated>2013-08-23T13:54:13Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I have this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;g.append(function(d) {
+  return document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, d.shape);
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where &lt;code&gt;d.shape&lt;/code&gt; can be &lt;code&gt;circle&lt;/code&gt; or &lt;code&gt;polygon&lt;/code&gt;. Now depending on the shape, I would like to add an attribute. For circle:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.attr(&#39;r&#39;, 12)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For polygon:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.attr(&#39;points&#39;, &#39;05,30 15,10 25,30&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But  I do not know how to add this variable pair attribute name/value. Is it possible? A related jsbin is &lt;a href=&quot;http://jsbin.com/eFAZABe/1&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18404412</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">keyboard events, char counter and textLength prop dilema</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="google-chrome"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="firefox"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="keyboard-events"/>
+        <author>
+            <name>Mario Legenda</name>
+            <uri>http://stackoverflow.com/users/1989550</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18404412/keyboard-events-char-counter-and-textlength-prop-dilema" />
+        <published>2013-08-23T13:43:11Z</published>
+        <updated>2013-08-23T13:54:05Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;Hi everyone, hopefully this is a valid question. &lt;/p&gt;
+
+&lt;p&gt;I did a char counter in javascript for a textarea element. Its equivalent to a character counter that limits the amount of text allowed in an input. When a user types in a character, char count goes up and that is shown in a box below so the user knows how many chars he has written so far. &lt;/p&gt;
+
+&lt;p&gt;I handled it with both keydown and keypress because the charCode property isn&#39;t the same on every browser, mainly Chrome and Opera (didn&#39;t check in Safari). When charCode isn&#39;t working, keyCode is used. That is not the problem. The problem is in textareaObj.value property. &lt;/p&gt;
+
+&lt;p&gt;It seems that when I press a keyboard button, first the keyboard event is handled with the old textareaObj.value value, then the new value is computed, so if I output console.log(textarea.value.length), it shows the old value but in Firefox and Chrome Firebug and Developer tools, the value displayed is the new value.length, the true value of textarea.value.length.&lt;/p&gt;
+
+&lt;p&gt;To better explain it, I made a function to handle these events. I put console.log(obj.value.length) in the calling function. The output was the old value but firebug (or firefox web console, or Chrome console) is showing the actual value of the length property. Could anyone explain why this may be happening?&lt;/p&gt;
+
+&lt;p&gt;Also, there is a textLength property in the textarea object. It has the same value as textareaObj.value.length but when I try to access it, it is undefined. Why is that?
+I looked for textLength in Mozilla Developers page, but it just says what you&#39;d expect, that it hold the length of text, but nothing else.&lt;/p&gt;
+
+&lt;p&gt;Thanks for any help.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/11524139</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">noty Jquery plugin timeout not happening</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="jquery-plugins"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="notifications"/>
+        <author>
+            <name>Rohit Kumar</name>
+            <uri>http://stackoverflow.com/users/1426295</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/11524139/noty-jquery-plugin-timeout-not-happening" />
+        <published>2012-07-17T14:00:28Z</published>
+        <updated>2013-08-23T13:53:24Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;The Jquery noty plugin timeout is not working when fed with a list of messages. I get the list of messages from servlet and call noty like this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+    function callNotification()
+    {
+        &amp;lt;c:foreach var = &quot;message&quot; items = &quot;${sessionScope.notification}&quot;&amp;gt;
+             notify(&#39;${message}&#39;);
+        &amp;lt;/c:foreach&amp;gt;
+    }
+    function notify(message)
+    {
+       noty({
+                &quot;text&quot;: message,
+                &quot;theme&quot;: noty_theme_facebook&quot;,
+                &quot;layout&quot;: topRight,
+                &quot;information&quot;,&quot;animateOpen&quot;:{&quot;height&quot;:&quot;toggle&quot;},
+                &quot;information&quot;,&quot;animateOpen&quot;:{&quot;height&quot;:&quot;toggle&quot;},
+                &quot;speed&quot;:500,
+                &quot;timeout&quot;:5000,
+                &quot;closeButton&quot;:true,
+                &quot;closeOnSelfClick&quot;:true,
+                &quot;closeOnSelfOver&quot;:false,
+                &quot;modal&quot;:false
+          })
+    &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ideally this should loop over the messages and print them with a  timeout of 5000ms. But this prints all of the messages at once. I further tried to use the javascript native setTimeout function  and replaced my callNotification with this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; function callNotification()
+    {
+        &amp;lt;c:foreach var = &quot;message&quot; items = &quot;${sessionScope.notification}&quot;&amp;gt;
+         (function(message){ 
+            setTimeout(function(){notify(&#39;${message}&#39;);},5000)
+         }(&#39;${message}&#39;)
+        }}
+        &amp;lt;/c:foreach&amp;gt;
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But this also proved ineffective. Strangely the timeout seems to work fine when I replace &lt;code&gt;&quot;layout&quot;:center&lt;/code&gt; in notify method. Where am I going wrong. I want the messages to be displayed with the time out of 5 seconds after which the first message gets automatically erased and the next shows up.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/18402681</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">replace semicolon (;) but not html characters (&amp;nbsp; etc.)</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="regex"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="html-parsing"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="smarty"/>
+        <author>
+            <name>dmpol18</name>
+            <uri>http://stackoverflow.com/users/2710944</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/18402681/replace-semicolon-but-not-html-characters-nbsp-etc" />
+        <published>2013-08-23T12:19:16Z</published>
+        <updated>2013-08-23T13:52:12Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m looking for regexp for my issue.
+I have a text (specification of a product), for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;length: 20cm; height: 10cm; &amp;amp;laquo;Night&amp;amp;raquo; mode: yes;&amp;amp;nbsp;manufacturer : Sony&amp;amp;copy; manual&amp;amp;nbsp;:&amp;amp;nbsp;yes&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The final result should look like this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;length&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;20cm&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+...
+&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;manufacturer&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;Sony&amp;amp;copy;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So I should replace &lt;code&gt;&quot;:&quot; + whitespace characters(\s*)&lt;/code&gt; for &lt;code&gt;&quot;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&quot;&lt;/code&gt;  and &lt;code&gt;&quot;;&quot; + whitespace characters(\s*)&lt;/code&gt; for &lt;code&gt;&quot;&amp;lt;/td&amp;gt;&amp;lt;/tr&amp;gt;&amp;lt;tr&amp;gt;&amp;lt;td&amp;gt;&quot;&lt;/code&gt;, but not in the case where there are  latin symbols &lt;code&gt;[a-z]+&lt;/code&gt; and &lt;code&gt;&amp;amp;&lt;/code&gt; sign before the &lt;code&gt;;&lt;/code&gt;.
+The point is in html chars like &amp;amp;_nbsp; &amp;amp;_laquo; &amp;amp;_copy etc. that contains &quot;;&quot;&lt;/p&gt;
+
+&lt;p&gt;In other words &lt;code&gt;:\s*&lt;/code&gt; but not &lt;code&gt;&amp;amp;[a-z]+[;]&lt;/code&gt;. &lt;/p&gt;
+
+&lt;p&gt;How can I do this?&lt;/p&gt;
+
+&lt;p&gt;My regexp in smarty looks like this:
+&quot; |regex_replace:&quot;/[:]\s*/&quot;:&quot;&quot;|regex_replace:&quot;/[;]\s*/&quot;:&quot;&quot; &quot; so the only thing is to remove html chars... I tried some combinations with (?!...) but no success
+I&#39;m looking for something like this
+&lt;a href=&quot;http://stackoverflow.com/questions/3194867/regexp-for-matching-three-letters-but-not-text-buy&quot;&gt;RegExp for matching three letters, but not text &amp;quot;BUY&amp;quot;&lt;/a&gt;&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/10823134</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">javascript sigma.js visualization - way over my head</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="json"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="visualization"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="sigma.js"/>
+        <author>
+            <name>crock1255</name>
+            <uri>http://stackoverflow.com/users/995879</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/10823134/javascript-sigma-js-visualization-way-over-my-head" />
+        <published>2012-05-30T19:41:47Z</published>
+        <updated>2013-08-23T13:52:05Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;I&#39;m trying to visualize a big network and found &lt;a href=&quot;http://sigmajs.org&quot; rel=&quot;nofollow&quot;&gt;sigma.js&lt;/a&gt; which looks fantastic.  The problem is, my programming experience is poor, and is only with statistical programming languages.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve tried to follow along with some examples, but can&#39;t get my network to display.  I&#39;ve lifted the code from the websites, trying to plug in my .gexf file, but nothing displays.&lt;/p&gt;
+
+&lt;p&gt;This is what I took from the &lt;a href=&quot;http://sigmajs.org/examples/gexf_example.html&quot; rel=&quot;nofollow&quot;&gt;sigma.js example&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function init() {
+  // Instanciate sigma.js and customize rendering :
+  var sigInst = sigma.init(document.getElementById(&#39;sigma-example&#39;)).drawingProperties({
+    defaultLabelColor: &#39;#fff&#39;,
+    defaultLabelSize: 14,
+    defaultLabelBGColor: &#39;#fff&#39;,
+    defaultLabelHoverColor: &#39;#000&#39;,
+    labelThreshold: 6,
+    defaultEdgeType: &#39;curve&#39;
+  }).graphProperties({
+    minNodeSize: 0.5,
+    maxNodeSize: 5,
+    minEdgeSize: 1,
+    maxEdgeSize: 1
+  }).mouseProperties({
+    maxRatio: 32
+  });
+
+  // Parse a GEXF encoded file to fill the graph
+  // (requires &quot;sigma.parseGexf.js&quot; to be included)
+  sigInst.parseGexf(&#39;donornet.gexf&#39;);
+
+  // Draw the graph :
+  sigInst.draw();
+}
+
+if (document.addEventListener) {
+  document.addEventListener(&quot;DOMContentLoaded&quot;, init, false);
+} else {
+  window.onload = init;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I replaced the .gexf file with my own &quot;donornet.gexf&quot; and saved it as donornet.js&lt;/p&gt;
+
+&lt;p&gt;I then tried to display the webpage following this &lt;a href=&quot;http://neosigma.herokuapp.com/index.html&quot; rel=&quot;nofollow&quot;&gt;example&lt;/a&gt; from &lt;a href=&quot;http://maxdemarzi.com/2012/04/12/using-sigma-js-with-neo4j/&quot; rel=&quot;nofollow&quot;&gt;Max De Marzi&lt;/a&gt; where I right-clicked and hit &quot;view page source&quot; to get the following code, which I replaced with my donornet.js file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    &amp;lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html; charset=utf-8&quot;&amp;gt;
+    &amp;lt;title&amp;gt;Donornet and Sigma.js Example&amp;lt;/title&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot; src=&quot;sigma.min.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot; src=&quot;sigma.parseGexf.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot; src=&quot;sigma.forceatlas2.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+    &amp;lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;neo_sigma.css&quot;/&amp;gt;
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;h1&amp;gt;Donornet and Sigma.js Example&amp;lt;/h1&amp;gt;
+        &amp;lt;div class=&quot;buttons-container&quot;&amp;gt;
+        &amp;lt;button class=&quot;btn&quot; id=&quot;stop-layout&quot;&amp;gt;Stop Layout&amp;lt;/button&amp;gt;
+        &amp;lt;button class=&quot;btn&quot; id=&quot;rescale-graph&quot;&amp;gt;Rescale Graph&amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+        &amp;lt;div class=&quot;span12 sigma-parent&quot; id=&quot;sigma-example-parent&quot;&amp;gt;
+    &amp;lt;div class=&quot;sigma-expand&quot; id=&quot;sigma-example&quot;&amp;gt;&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;script type=&quot;text/javascript&quot; src=&quot;donornet.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All the files are in the same folder, and I have the parseGexf.js downloaded in the same file as donornet.js and donornet.gexf.&lt;/p&gt;
+
+&lt;p&gt;Any help would be greatly, greatly appreciated.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    <entry>
+        <id>http://stackoverflow.com/q/16125705</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">How do i &quot;plug in&quot; the plugins for sigma.js?</title>
+        <category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="visualization"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="gephi"/><category scheme="http://stackoverflow.com/feeds/tag/javascript/tags" term="sigma.js"/>
+        <author>
+            <name>Tuomas</name>
+            <uri>http://stackoverflow.com/users/40372</uri>
+        </author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/16125705/how-do-i-plug-in-the-plugins-for-sigma-js" />
+        <published>2013-04-20T22:09:26Z</published>
+        <updated>2013-08-23T13:51:51Z</updated>
+        <summary type="html">
+            
+
+            &lt;p&gt;The network visualisation .js library Sigma.js has many examples of various plugins you can use with the library. You can find them here &lt;a href=&quot;http://sigmajs.org/examples.html&quot; rel=&quot;nofollow&quot;&gt;http://sigmajs.org/examples.html&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve managed to use the Gephi sigma.js export plugin to export my nodes and edges as a very basic webpage, and I&#39;ve tweaked with it a bit. &lt;/p&gt;
+
+&lt;p&gt;Now I&#39;d like to add some extra functionality to my page -- this is work-related, I&#39;m sorry I cannot share -- but I can&#39;t for the life of me figure out how to &quot;plug in&quot; the plugins mentioned on the sigma.js website.&lt;/p&gt;
+
+&lt;p&gt;The functionality I&#39;m looking for is contained in the &lt;a href=&quot;http://sigmajs.org/examples/more_node_info.html&quot; rel=&quot;nofollow&quot;&gt;accessing node attributes&lt;/a&gt; example. How do I import/use/copypaste the plugin to my site?&lt;/p&gt;
+
+        </summary>
+    </entry>
+</feed>

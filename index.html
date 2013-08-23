@@ -7,39 +7,55 @@
     <link type="text/css" rel="stylesheet" href="style/main.css"/>
     <style type="text/css">
       body > header {
-        height: 250px;
+        height: 150px;
         background-color: #343434;
-        padding: 50px;
+        color: #fff;
+        padding: 25px 50px;
       }
-
+      body > header input {
+        width: 100%;
+      }
     </style>
-  </head>
-  <body>
-    <header>
-        <article>
-          <form>
-            <label for="rss-link"></label>
-            <input type="text" id="rss-link">
-            <button>Fetch!</button>
-          </form>
-        <article>
-    </header>
-    <nav></nav>
-    <section>
-    </section>
-    <footer></footer>
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
     <script>
       if (!window.jQuery) {
           document.write('<script src="javascript/jquery-2.0.3.min.js"><\/script>');
       }
     </script>
+  </head>
+  <body>
+    <header>
+        <h1>Hello Feeders!</h1>
+        <section>
+          <form action="javascript: test($('#rss-input').val())">
+            <label for="rss-link"></label>
+            <input type="text" id="rss-input" name="rss-input" value="" placeholder="Input rss link" autofocus />
+            <!-- <button>Fetch RSS!</button> -->
+          </form>
+        <section>
+    </header>
+    <nav></nav>
+    <section>
+    </section>
+    <footer></footer>
+  
     <script type="text/javascript">
       // var rss = function() {
       //   var sites = [];
       //   var 
       // }
-    </script>
+
+      var test = function(testi) {
+        // e.preventDefault();
+        console.log('test', testi);
+        $.ajax({
+                    url: 'http://stackoverflow.com/feeds/tag/javascript',
+                    dataType: 'jsonp',
+                    success: function(data){
+                      console.log('success?', data);
+                    }
+                });
+      }
+    </script> 
   </body>
 </html>
